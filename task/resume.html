@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
+    nav { margin-bottom: 1.5rem; padding-bottom: .5rem; border-bottom: 1px solid #ccc; }
+    nav a { margin-right: 1rem; color: #1a4d8f; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    h1 { margin-bottom: 0; }
+    h2 { margin-top: 1.8rem; border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+  </nav>
+
+  <h1>Your Name</h1>
+  <p>Aspiring Software Developer &middot; your.email@example.com &middot; +91 00000 00000</p>
+
+  <h2>Objective</h2>
+  <p>To build reliable web applications and keep learning along the way.</p>
+
+  <h2>Education</h2>
+  <p><strong>B.Tech, Computer Science</strong> &ndash; Your University (2022&ndash;2026)</p>
+
+  <h2>Skills</h2>
+  <ul>
+    <li>Python, Flask</li>
+    <li>HTML, CSS</li>
+    <li>SQL, Git</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <p><strong>Student Marks Tracker</strong> &ndash; Flask app with dynamic routes for subjects and marks.</p>
+</body>
+</html>
